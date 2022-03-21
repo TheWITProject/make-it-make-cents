@@ -9,3 +9,6 @@ static
 
 # VS Code
 .vscode
+
+# misc
+.DS_Store
