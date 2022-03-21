@@ -1,0 +1,11 @@
+# Python
+*.pyc
+__pycache__
+
+# Local Dirs
+venv
+logs
+static
+
+# VS Code
+.vscode
