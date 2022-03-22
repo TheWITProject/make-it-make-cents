@@ -48,3 +48,4 @@ This will start the frontend on the adddress [localhost:3000](http://localhost:3
 This demo app was originally built for a scotch.io (acquired in 2020 by DigitalOcean) article by [Jordan Irabor](https://github.com/Jordanirabor/django-todo-react)
 
 Ely was here =]
+Natalie here!
