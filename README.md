@@ -29,7 +29,7 @@ You will need two terminals pointed to the frontend and backend directories to s
 1. Enter the virtual environment `pipenv shell`
 2. Start the backend server in the `[backend]` directory: `python manage.py runserver 8000`
 
-This will start the frontend on the adddress [localhost:8000](http://localhost:8000)
+This will start the backend on the adddress [localhost:8000](http://localhost:8000)
 
 ### /frontend
 1. Start the frontend server in the `[frontend]` directory: `npm start`
