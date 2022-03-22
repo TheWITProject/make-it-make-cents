@@ -10,14 +10,15 @@ This is a application built off Django (including the Django REST Framework for 
 ## Getting started
 
 ### /backend
-1. Source the virtual environment `pipenv shell`
-2. Install the dependencies `pipenv install`
-3. Run migrations `python manage.py migrate`.
+1. Navigate into the `[backend]` directory
+2. Source the virtual environment `pipenv shell`
+3. Install the dependencies `pipenv install`
+4. Run migrations `python manage.py migrate`.
 
 Note: To close out of the virtual environment, you can press `[ctrl] + d`
 
 ### /frontend
-1. Navigate into the frontend directory `cd frontend`
+1. Navigate into the `[frontend]` directory
 2. Install the dependencies `npm install`
 
 ## Run the application
