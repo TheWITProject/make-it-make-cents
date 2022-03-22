@@ -11,7 +11,7 @@ This is a application built off Django (including the Django REST Framework for 
 
 ### /backend
 
-1. Source the virtual environment `[pipenv shell]`
+1. Source the virtual environment `pipenv shell`
 2. Install the dependencies `[pipenv install]`
 3. Navigate into the `/backend` subdirectory and run migrations `[python manage.py migrate]`.
 
