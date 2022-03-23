@@ -24,3 +24,10 @@
   border: 1px solid lightblue;
   color: lightblue;
 }
+
+.welcome .registerNewUser{
+  font-family: sans-serif;
+  color: gray;
+  padding: 20px;
+
+}
