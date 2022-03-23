@@ -11,3 +11,18 @@
   border: 1px solid lightblue;
   color: lightblue;
 }
+
+.registerNewUser{
+  font-family: sans-serif;
+  color: gray;
+  padding: 20px;
+}
+
+.completionButton{
+  color: white;
+  font-size: 70%;
+  background-color: black;
+  border-radius: 25px;
+  border: 2px;
+  padding: 20px;
+}
