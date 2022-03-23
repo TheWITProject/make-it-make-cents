@@ -4,6 +4,11 @@ function App() {
   return (
     <div className="welcome">
       <div className="logo">Location for logo</div>
+<<<<<<< HEAD
+      <div className="login">Username:</div>
+      <div className="login">Password:</div>
+      <div className="signinbutton"><button> Sign in </button></div>
+=======
       <div className="registerNewUser">
       <h3>
           New User? Register Below!
@@ -26,6 +31,7 @@ function App() {
          <strong>REGISTER</strong>
         </a>
       </div>
+>>>>>>> master
       <div className="links">Location for links</div>
     </div>
   );
