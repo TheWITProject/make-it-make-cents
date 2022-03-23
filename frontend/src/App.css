@@ -1,13 +1,26 @@
-.welcome {
-  color: pink;
+.HomePage {
+  text-align: center;
+  background-color: #ffccf9;
+  color: black;
+  min-height: 70vh;
+  display: grid;
+  justify-content: center;
 }
 
-.welcome .logo {
-  border: 1px solid green;
-  color: green;
+p{
+  text-align: center;
+  font-family: sans-serif;
+  border-style:solid;
+  border-color:white ;
+  border-width: 5px 20px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: calc(10px + 2vmin);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.welcome .links {
-  border: 1px solid lightblue;
-  color: lightblue;
-}
