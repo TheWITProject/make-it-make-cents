@@ -2,12 +2,44 @@ import './App.css';
 
 function App() {
   return (
-    <div className="welcome">
+    <><div className="welcome">
       <div className="logo">Location for logo</div>
       Lalalal stuff in the middle for you guys to do :)
       <div className="links">Location for links</div>
     </div>
-  );
-}
+    
+    <div className="registerNewUser">
+        <h3>
+          New User? Register Below!
+        </h3>
+        <div className="username">
+          Username:
+        </div>
+        <div className="email">
+          e-mail:
+        </div>
+        <div className="password">
+          Create Password:
+        </div>
+        <div className="password">
+          Confirm Password:
+        </div>
+        <a
+          className="completionButton"
+        >
+         <strong>REGISTER</strong>
+        </a>
+    </div>
+    </>
 
-export default App;
+
+
+
+
+        );
+        }
+
+
+
+
+        export default App;
