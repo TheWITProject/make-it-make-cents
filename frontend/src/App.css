@@ -1,4 +1,4 @@
-.HomePage {
+.welcome .about-us {
   text-align: center;
   background-color: #ffccf9;
   color: black;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-p{
+.welcome .about-us p{
   text-align: center;
   font-family: sans-serif;
   border-style:solid;
@@ -24,3 +24,27 @@ p{
   padding-left: 15px;
 }
 
+.welcome .login {
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  margin-left: 50%;
+  background-color: white;
+}
+
+.welcome .signinbutton {
+  border: 1px solid white;
+  color: palevioletred;
+  margin-left: 70%;
+}
+
+.welcome .links {
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
+.welcome .registerNewUser{
+  font-family: sans-serif;
+  color: gray;
+  padding: 20px;
+
+}
