@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -29,3 +30,15 @@ function App() {
 }
 
 export default App;
+
+
+<nav
+style={{
+  borderBottom: "solid 1px",
+  paddingBottom: "1rem",
+}}
+> 
+<Link to="/about-us">About</Link> |{" "}
+<Link to="/financial-assessment">FinAssess</Link>
+<Link to="/budget-calculator">Budget</Link>
+</nav>
