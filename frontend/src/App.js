@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,7 +24,17 @@ function App() {
           <strong>REGISTER</strong>
         </a>
       </div>
-      <div className="links">Location for links</div>
+      <div className="links">
+        <nav
+          style={{
+            borderBottom: 'solid 1px',
+            paddingBottom: '1rem',
+          }}
+        >
+          <Link to="/about-us">About</Link> | <Link to="/financial-assessment">FinAssess</Link> |
+          <Link to="/budget-calculator">Budget</Link>
+        </nav>
+      </div>
     </div>
   );
 }
