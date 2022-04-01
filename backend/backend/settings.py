@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'corsheaders',            # add this
     'rest_framework',         # add this 
     'todo',
+    'users',
   ]
 
 
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Eastern'
 
 USE_I18N = True
 
