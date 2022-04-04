@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'US/Eastern'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -131,3 +131,4 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
     'http://localhost:8080',
 ]
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
