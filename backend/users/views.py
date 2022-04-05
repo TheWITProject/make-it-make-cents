@@ -15,10 +15,16 @@ class LoginViewSet(viewsets.ModelViewSet):
     serializer_class = LoginSerializer
 
 
-def users_create(request):
+def register_create(request):
     return render(
         request,
         'users/register_list.html',
+        {}
+    )
+
+def login_create(request):
+    return render(
+        request,
         'users/login_list.html',
         {}
     )
