@@ -1,14 +1,9 @@
-from django.conf import settings
 from django.db import models
-from django.utils import timezone
 
 
-class Register(models.Model):
-    username = models.CharField(max_length=30)
-    password = models.CharField(max_length=30)
-    email = models.TextField()
-    birthday = models.DateTimeField(blank=True, null=True)
+class Users(models.Model):
+    username = models.CharField(blank=False, null=False, max_length=30)
+    password = models.CharField(blank=False, null=False, max_length=30)
+    email = models.EmailField(blank=False, null=False)
+    birthday = models.DateField(blank=False, null=False)
 
-class Login(models.Model):
-    username = models.CharField(max_length=30)
-    password = models.CharField(max_length=30)

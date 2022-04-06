@@ -1,12 +1,9 @@
 from rest_framework import serializers
-from users.models import Register, Login
+#from users.models import Register, Login
 
-class RegisterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Register 
-        fields = ('username', 'password', 'birthday', 'email' ) 
+class UsersSerializer(serializers.Serializer):
+     Username : serializers.CharField(blank=False, null=False, max_length=30)
+     Password : serializers.CharField(blank=False, null=False, max_length=30)
+     Email : serializers.EmailField(blank=False, null=False)
 
-class LoginSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Login
-        fields = ('username', 'password')         
+        
