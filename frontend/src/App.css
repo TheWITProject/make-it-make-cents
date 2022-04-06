@@ -48,3 +48,15 @@
   padding: 20px;
 
 }
+
+img {
+  height: 150px;
+  width: 500px;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

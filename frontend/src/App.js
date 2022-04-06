@@ -1,13 +1,15 @@
+import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import logo from './horizontallogo.png';
+
+console.log(logo); 
 
 function App() {
   return (
     <div className="welcome">
-      <div className="logo">Location for logo</div>
-      <div className="about-us">
-        <p>MAKE IT MAKE CENTS</p>
-        <p>ABOUT US</p>
+      <div className="logo">
+      <img src={logo} alt="Logo" className="center" />
       </div>
       <div className="login">Username:</div>
       <div className="login">Password:</div>
