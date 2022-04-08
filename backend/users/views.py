@@ -5,11 +5,11 @@ from django.contrib.auth.models import User
 from users.serializers import UserSerializer
 
 
-class UserList(generics.ListAPIView):
+class User(generics.ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 
 class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+   queryset = User.objects.all()
+   serializer_class = UserSerializer

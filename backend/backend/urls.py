@@ -14,7 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),           
     path('api/', include(router.urls)),                # add this
     path('accounts/', include('django.contrib.auth.urls')),
-    path('users/', views.UserList.as_view()),
-    path('users/<int:pk>/', views.UserDetail.as_view()),
+   # path('users/', views.UserList.as_view()),
+   # path('users/<int:pk>/', views.UserDetail.as_view()),
 ]
 
