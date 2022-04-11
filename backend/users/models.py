@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models 
-from django.contrib.auth.models import users 
+from django.contrib.auth.models import User 
 from django.utils import timezone
 
 #We have to create the database table for a new user
