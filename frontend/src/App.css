@@ -48,3 +48,65 @@
   padding: 20px;
 
 }
+
+.financialStart {
+font-family: sans-serif; 
+}
+
+.logout {
+  text-align: right;
+  font-family: Verdana;
+  font-weight: 600;
+  font-size: 7px;
+  color: #322667;
+  padding: 20px;
+}
+.mmclogo {
+  height: 105px;
+  width: 298px;
+  display: block;
+  padding-right: 500px;
+
+}
+
+.tabs {
+  height: 150px;
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  display: flex;
+  justify-content: space-evenly
+}
+
+tabs text {
+  position:absolute;
+  z-index:1;
+
+}
+image.center {
+  position:absolute;
+  z-index:0;
+}
+
+.middletext {
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  text-align: center;
+  font-size: 30px;
+}
+
+.getstarted {
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  text-align: center;
+  font-size: 30px;
+}
+
+.startpiggy {
+  height: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
