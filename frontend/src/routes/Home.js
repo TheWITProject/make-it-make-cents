@@ -10,7 +10,7 @@ export default function Home() {
         <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> 
       <div className="WelcomeUser">
         <h2>Hello, (User's Name) ! What would you like to do today? </h2>
-      <div className="Button1"> <h1 ><nav><Link to="/financial-assessment">Test Your Financial Knowledge</Link></nav>  </h1></div>
+      <div className="Button1"> <h1 ><nav><Link to="/financial-assessment">Test Your Financial Knowledge</Link></nav>  </h1> </div>
       <div className="Button2"> <h1 > <nav>
           <Link to="/budget-calculator"> Create A Budget </Link>
         </nav></h1> </div>
