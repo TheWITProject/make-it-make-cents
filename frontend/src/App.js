@@ -31,7 +31,7 @@ function App() {
             paddingBottom: '1rem',
           }}
         >
-          <Link to="/about-us">About</Link> | <Link to="/financial-assessment">FinAssess</Link> |
+          <Link to="/Home">Home</Link> | <Link to="/financial-assessment">FinAssess</Link> |
           <Link to="/budget-calculator">Budget</Link>
         </nav>
       </div>
