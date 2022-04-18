@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FinAssess from './routes/financial-assessment';
-import About from './routes/about-us';
+import Home from './routes/Home';
 import Budget from './routes/budget-calculator';
 
 ReactDOM.render(
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="financial-assessment" element={<FinAssess />} />
-        <Route path="about-us" element={<About />} />
+        <Route path="Home" element={<Home />} />
         <Route path="budget-calculator" element={<Budget />} />
       </Routes>
     </BrowserRouter>
