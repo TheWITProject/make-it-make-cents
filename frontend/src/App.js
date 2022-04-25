@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="welcome">
       <div className="logo">
-      <img src={logo} alt="Logo" className="center" />
+      <img src={logo} alt="Logo"/>
       </div>
       <div className="login">Username:</div>
       <div className="login">Password:</div>
