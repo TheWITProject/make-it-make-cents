@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import FinAssess from './routes/financial-assessment';
 import Home from './routes/Home';
 import Budget from './routes/budget-calculator';
+import BudgetingQ1 from './routes/FinAssQs/Questions';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route path="financial-assessment" element={<FinAssess />} />
         <Route path="Home" element={<Home />} />
         <Route path="budget-calculator" element={<Budget />} />
+        <Route path="Questions" element={<BudgetingQ1 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

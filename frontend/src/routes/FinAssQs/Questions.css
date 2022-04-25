@@ -1,0 +1,22 @@
+.Questions .Logout {
+color: navy;
+text-align: right;
+padding-top: 50px;
+padding-right: 50px;
+font-size: 20px;
+font-style: verdana;
+}
+
+.Questions .img {
+height: 250px;
+width: 700px;
+}
+
+.BudgetingQuestions {
+text-align: left;
+color:navy;
+font-size: 30px;
+font-style: verdana;
+padding-top: 50px;
+padding-left: 100px;
+}
