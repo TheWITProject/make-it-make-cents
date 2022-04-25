@@ -1,29 +1,3 @@
-.welcome .Home {
-  text-align: center;
-  background-color: #ffccf9;
-  color: black;
-  min-height: 70vh;
-  display: grid;
-  justify-content: center;
-}
-
-.welcome .Home p{
-  text-align: center;
-  font-family: sans-serif;
-  border-style:solid;
-  border-color:white ;
-  border-width: 5px 20px;
-  margin-top: 300px;
-  margin-bottom: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: calc(10px + 2vmin);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .welcome .login {
   border: 1px solid palevioletred;
   color: palevioletred;
@@ -139,14 +113,30 @@ font-family: sans-serif;
   cursor: pointer; 
 }
 
-img {
-  height: 150px;
-  width: 500px;
+.welcome .Home {
+  text-align: center;
+  background-color: #ffccf9;
+  color: black;
+  min-height: 70vh;
+  display: grid;
+  justify-content: center;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+.welcome .Home p{
+  text-align: center;
+  font-family: sans-serif;
+  border-style:solid;
+  border-color:white ;
+  border-width: 5px 20px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: calc(10px + 2vmin);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .Logout {
@@ -156,15 +146,6 @@ img {
   padding-right: 50px;
   font-size: 20px;
   font-style: verdana;
-}
-
-img {
-  height: 250px;
-  width: 700px;
-}
-.Left {
-  display:block;
-  padding-left: 100px;
 }
 
 .WelcomeUser{
