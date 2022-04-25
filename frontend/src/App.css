@@ -1,4 +1,4 @@
-.welcome .about-us {
+.welcome .Home {
   text-align: center;
   background-color: #ffccf9;
   color: black;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.welcome .about-us p{
+.welcome .Home p{
   text-align: center;
   font-family: sans-serif;
   border-style:solid;
@@ -139,3 +139,69 @@ font-family: sans-serif;
   cursor: pointer; 
 }
 
+img {
+  height: 150px;
+  width: 500px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Logout {
+  color: navy;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  font-style: verdana;
+}
+
+img {
+  height: 250px;
+  width: 700px;
+}
+.Left {
+  display:block;
+  padding-left: 100px;
+}
+
+.WelcomeUser{
+  color: navy;
+  font-size: 50px;
+  text-align: left;
+  font-style: verdana;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.Button1 {
+  margin-left: 900px;
+  margin-top: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: Navy;
+  text-align: center;
+  border-style: none ;
+  height: 150px;
+  width: 40%;
+  font-size: 30px;
+  font-style: verdana;
+  background-color: lavender
+}
+
+.Button2 {
+  margin-left: 900px;
+  margin-top: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: Navy;
+  text-align: center;
+  border-style: none ;
+  height: 150px;
+  width: 40%;
+  font-size: 30px;
+  font-style: verdana;
+  background-color: lavender;
+}
