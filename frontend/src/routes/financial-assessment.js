@@ -1,7 +1,8 @@
+
 export default function FinAssess() {
     return (
-      <main style={{ padding: "1rem 0" }}>
+    <div> 
         <h2>This is the financial assessment </h2>
-      </main>
+    </div>
     );
   }

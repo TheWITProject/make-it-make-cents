@@ -10,12 +10,6 @@ class user(models.Model):
     Email = models.TextField(null=False, blank=False)  
     Password = models.CharField(null=False, blank=False, max_length=30)
 
-#class login(models.Model):
-#    Username = models.ForeignKey(User,on_delete=models.CASCADE)
-#   Password = models.ForeignKey(User,on_delete=models.CASCADE)
-
-#    def __str__(self):
-#        return User
 
 class Question(models.Model):
     question_number = models.IntegerField()
@@ -26,9 +20,9 @@ class Question(models.Model):
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choiceA = models.TextField(max_length=100) 
-    choiceB = models.TextField(max_length=100)
-    choiceC = models.TextField(max_length=100)
+    A = models.TextField(max_length=100) 
+    B = models.TextField(max_length=100)
+    C = models.TextField(max_length=100)
 
     def __str__(self):
         return str(self.question)

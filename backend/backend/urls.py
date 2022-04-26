@@ -10,15 +10,14 @@ from users import views
         
 router = routers.DefaultRouter()                      # add this
 router.register(r'users', views.usersViewSet)
-#router.register(r'login', views.loginViewSet)
-#router.register(r'todos', views.TodoView, 'todo')     # add this
+router.register(r'Question', views.QuestionViewSet)
+router.register(r'Choice', views.ChoiceViewSet)     # add this
         
 urlpatterns = [
     path('admin/', admin.site.urls),           
     path('api/', include(router.urls)),                # add this
     path ('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('accounts/', include('django.contrib.auth.urls')),
-   # path('users/', views.UserList.as_view()),
-   # path('users/<int:pk>/', views.UserDetail.as_view()),
+
 ]
 

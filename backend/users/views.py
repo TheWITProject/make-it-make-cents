@@ -1,9 +1,9 @@
 from django.shortcuts import render
-# Create your views here.
-from django.contrib.auth.models import User  #login
+from django.contrib.auth.models import User 
 from rest_framework import viewsets
 from rest_framework import permissions
-from users.serializers import UserSerializer #loginSerializer
+from users.models import Question, Choice
+from users.serializers import UserSerializer, QuestionSerializer, ChoiceSerializer
 
 
 class usersViewSet(viewsets.ModelViewSet):
@@ -12,7 +12,10 @@ class usersViewSet(viewsets.ModelViewSet):
     permissions_classes = [permissions.IsAuthenticated]
 
 
-#class loginViewSet(viewsets.ModelViewSet):
-#   queryset = login.objects.all()
-#   serializer_class = loginSerializer
-#   permissions_classes = [permissions.IsAuthenticated]
+class QuestionViewSet(viewsets.ModelViewSet):
+   queryset = Question.objects.all()
+   serializer_class = QuestionSerializer
+
+class ChoiceViewSet(viewsets.ReadOnlyModelViewSet):
+   queryset = Choice.objects.all()
+   serializer_class = ChoiceSerializer
