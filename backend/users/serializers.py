@@ -1,15 +1,19 @@
 from django.contrib.auth.models import User
-#from backend.users.models import login #error no module named backend, i think this isn't linked correctly
+from users.models import Question, Choice
 from rest_framework import serializers
- #from rest_framework import users 
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'username', 'email', 'password', 'id']
 
-#class loginSerializer(serializers.ModelSerializer):
-    #class Meta:
-     #   model = login
-     #   fields = ['Username', 'Password']
+class QuestionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Question
+        fields = ['question_number', 'question_text']
+
+class ChoiceSerializer(serializers.ModelSerializer):
+    class Meta:
+       model = Choice
+       fields = ['question', 'A', 'B','C']
 
