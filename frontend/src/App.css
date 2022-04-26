@@ -1,3 +1,118 @@
+.welcome .login {
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  margin-left: 50%;
+  background-color: white;
+}
+
+.welcome .signinbutton {
+  border: 1px solid white;
+  color: palevioletred;
+  margin-left: 70%;
+}
+
+.welcome .links {
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
+.welcome .registerNewUser{
+  font-family: sans-serif;
+  color: gray;
+  padding: 20px;
+}
+
+.welcome .logo{
+height: 105px;
+width: 298px;
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+}
+
+.financialStart {
+font-family: sans-serif; 
+}
+
+.financialStart .tabs {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+}  
+
+.financialStart .mmclogo {
+  height: 105px;
+  width: 298px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.financialStart .tabs .logout {
+  text-align: right;
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  cursor: url;
+}
+
+.financialStart .tabs .finassesslink {
+  font-family: Verdana;
+  font-size: 14pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
+
+.financialStart .tabs .pigicon{
+  position: relative;
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  order: -1;
+}
+
+.financialStart .tabs .budgetcallink {
+  font-family: Verdana;
+  font-size: 14pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
+
+.financialStart .middletext {
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: default;
+}
+
+.financialStart .getstarted {
+  font-family: Verdana;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  padding-left: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: default; 
+}
+
+.financialStart .startpiggy {
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; 
+}
+
 .welcome .Home {
   text-align: center;
   background-color: #ffccf9;
@@ -24,39 +139,6 @@
   padding-left: 15px;
 }
 
-.welcome .login {
-  border: 1px solid palevioletred;
-  color: palevioletred;
-  margin-left: 50%;
-  background-color: white;
-}
-
-.welcome .signinbutton {
-  border: 1px solid white;
-  color: palevioletred;
-  margin-left: 70%;
-}
-
-.welcome .links {
-  border: 1px solid lightblue;
-  color: lightblue;
-}
-
-.welcome .registerNewUser{
-  font-family: sans-serif;
-  color: gray;
-  padding: 20px;
-}
-img {
-  height: 150px;
-  width: 500px;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .Logout {
   color: navy;
   text-align: right;
@@ -64,15 +146,6 @@ img {
   padding-right: 50px;
   font-size: 20px;
   font-style: verdana;
-}
-
-img {
-  height: 250px;
-  width: 700px;
-}
-.Left {
-  display:block;
-  padding-left: 100px;
 }
 
 .WelcomeUser{
