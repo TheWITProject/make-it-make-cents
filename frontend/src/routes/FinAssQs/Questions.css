@@ -1,4 +1,4 @@
-.Questions .Logout {
+.Logout {
 color: navy;
 text-align: right;
 padding-top: 50px;
@@ -7,15 +7,18 @@ font-size: 20px;
 font-style: verdana;
 }
 
-.Questions .img {
+.img {
 height: 250px;
 width: 700px;
 }
 
+.Spacing{
+text-align: center;  
+}
 .BudgetingQuestions {
-text-align: left;
+text-align: center;
 color:navy;
-font-size: 30px;
+font-size: 50px;
 font-style: verdana;
 padding-top: 50px;
 padding-left: 100px;
