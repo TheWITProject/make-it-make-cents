@@ -1,7 +1,7 @@
 .welcome .format {
   display: flex;
   justify-content: flex-start;
-  justify-content: space-between;
+  flex-flow: column wrap;
 }
 .welcome .welcome {
   margin-left: 20%;
@@ -9,18 +9,21 @@
   text-align: center;
   border-style: none;
   font-size: 36pt;
-  font-style: Verdana Bold;
+  font-family: Verdana;
+  font-style: bold;
   padding-top: 20px;
   padding-bottom: 129px;
 }
 
 .welcome .returningusers {
-  margin-left: 20%;
   color: Navy;
   text-align: center;
   border-style: none;
-  font-size: 12pt;
-  font-style: verdana bold;
+  font-size: 16pt;
+  font-family: verdana;
+  font-style: bold;
+  align-items: center;
+  justify-content: center;
 }
 
 .welcome .username {
@@ -31,11 +34,10 @@
   height: 35px;
   width: 241px;
   font-size: 12pt;
-  font-style: verdana;
-  padding: 12px;
+  font-family: verdana;
+  font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
-  background-clip: content-box; 
 }
 
 .welcome .password {
@@ -46,29 +48,34 @@
   height: 35px;
   width: 241px;
   font-size: 12pt;
-  font-style: verdana;
+  font-family: verdana;
+  font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
-  background-clip: content-box; 
 }
 
 .welcome .signin {
+  margin-left: 50%;
   color: white;
   text-align: center;
-  border: 12px;
-  padding: 12px;
+  border-style: none;
+  height: 35px;
+  width: 241px;
   font-size: 12pt;
-  font-style: verdana;
+  font-family: verdana;
+  font-style: bold;
   background-color: Navy;
+  padding-top: 25px;
+  padding-bottom: 72px;
 }
 
 .welcome .newusers {
-  margin-left: 20%;
   color: Navy;
   text-align: center;
   border-style: none;
-  font-size: 12pt;
-  font-style: verdana bold;
+  font-size: 16pt;
+  font-family: verdana;
+  font-style: bold;
   padding-top: 144px;
 }
 
@@ -80,11 +87,10 @@
   height: 35px;
   width: 241px;
   font-size: 12pt;
-  font-style: verdana;
+  font-family: verdana;
+  font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
-  background-clip: content-box; 
-  
 }
 .welcome .name {
   margin-left: 50%;
@@ -94,19 +100,22 @@
   height: 35px;
   width: 241px;
   font-size: 12pt;
-  font-style: verdana;
+  font-family: verdana;
+  font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
-  background-clip: content-box; 
 }
 
 .welcome .register {
+  margin-left: 50%;
   color: white;
   text-align: center;
   border: 12px;
-  padding: 12px;
+  height: 35px;
+  width: 241px;
   font-size: 12pt;
-  font-style: verdana;
+  font-family: verdana;
+  font-style: bold;
   background-color: Navy;
 }
 
