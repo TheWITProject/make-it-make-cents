@@ -1,44 +1,152 @@
-.welcome .login {
-  border: 1px solid palevioletred;
-  color: palevioletred;
+.welcome .format {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+.welcome .welcome {
+  margin-left: 20%;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  font-size: 36pt;
+  font-family: Verdana;
+  font-style: bold;
+  padding-top: 20px;
+  padding-bottom: 129px;
+}
+
+.welcome .returningusers {
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  font-size: 16pt;
+  font-family: verdana;
+  font-style: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome .username {
   margin-left: 50%;
-  background-color: white;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: lavender;
+  padding-bottom: 8px;
 }
 
-.welcome .signinbutton {
-  border: 1px solid white;
-  color: palevioletred;
-  margin-left: 70%;
+.welcome .password {
+  margin-left: 50%;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: lavender;
+  padding-bottom: 8px;
 }
 
-.welcome .links {
+.welcome .signin {
+  margin-left: 50%;
+  color: white;
+  text-align: center;
+  border-style: none;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: Navy;
+  padding-top: 25px;
+  padding-bottom: 72px;
+}
+
+.welcome .newusers {
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  font-size: 16pt;
+  font-family: verdana;
+  font-style: bold;
+  padding-top: 144px;
+}
+
+.welcome .email {
+  margin-left: 50%;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: lavender;
+  padding-bottom: 8px;
+}
+.welcome .name {
+  margin-left: 50%;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: lavender;
+  padding-bottom: 8px;
+}
+
+.welcome .register {
+  margin-left: 50%;
+  color: white;
+  text-align: center;
+  border: 12px;
+  height: 35px;
+  width: 241px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  background-color: Navy;
+}
+
+.welcome .format .links {
   border: 1px solid lightblue;
   color: lightblue;
 }
 
-.welcome .registerNewUser{
+.welcome .format .registerNewUser {
   font-family: sans-serif;
   color: gray;
   padding: 20px;
 }
 
-.welcome .logo{
-height: 105px;
-width: 298px;
-display: flex;
-justify-content: flex-start;
-flex-direction: row;
+.welcome .logo {
+  height: 105px;
+  width: 298px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .financialStart {
-font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
 .financialStart .tabs {
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
-}  
+}
 
 .financialStart .mmclogo {
   height: 105px;
@@ -65,7 +173,7 @@ font-family: sans-serif;
   cursor: url;
 }
 
-.financialStart .tabs .pigicon{
+.financialStart .tabs .pigicon {
   position: relative;
   display: flex;
   justify-self: flex-start;
@@ -102,7 +210,7 @@ font-family: sans-serif;
   text-align: center;
   justify-content: center;
   font-size: 30px;
-  cursor: default; 
+  cursor: default;
 }
 
 .financialStart .startpiggy {
@@ -110,45 +218,18 @@ font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.welcome .Home {
-  text-align: center;
-  background-color: #ffccf9;
-  color: black;
-  min-height: 70vh;
-  display: grid;
-  justify-content: center;
-}
-
-.welcome .Home p{
-  text-align: center;
-  font-family: sans-serif;
-  border-style:solid;
-  border-color:white ;
-  border-width: 5px 20px;
-  margin-top: 300px;
-  margin-bottom: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: calc(10px + 2vmin);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.Logout {
+.home Logout {
   color: navy;
-  text-align: right;
   padding-top: 50px;
   padding-right: 50px;
   font-size: 20px;
   font-style: verdana;
 }
 
-.WelcomeUser{
+.home .WelcomeUser {
   color: navy;
   font-size: 50px;
   text-align: left;
@@ -164,25 +245,31 @@ font-family: sans-serif;
   padding-bottom: 10px;
   color: Navy;
   text-align: center;
-  border-style: none ;
-  height: 150px;
-  width: 40%;
-  font-size: 30px;
-  font-style: verdana;
-  background-color: lavender
-}
-
-.Button2 {
-  margin-left: 900px;
-  margin-top: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: Navy;
-  text-align: center;
-  border-style: none ;
+  border-style: none;
   height: 150px;
   width: 40%;
   font-size: 30px;
   font-style: verdana;
   background-color: lavender;
+}
+
+.Button2 {
+  margin-left: 900px;
+  margin-top: 200px;
+  color: Navy;
+  text-align: center;
+  border-style: none;
+  height: 150px;
+  width: 40%;
+  font-size: 30px;
+  font-style: verdana;
+  background-color: lavender;
+}
+
+.Left {
+  display: flex;
+  justify-content: flex-start;
+  height: 305px;
+  width: 598px;
+  padding-left: 100px;
 }

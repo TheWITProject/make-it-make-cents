@@ -12,32 +12,18 @@ function App() {
       <div className="logo">
       <img src={logo} alt="Logo"/>
       </div>
-      <div className="login">Username:</div>
-      <div className="login">Password:</div>
-      <div className="signinbutton">
-        <button> Sign in </button>
-      </div>
-      <div className="registerNewUser">
-        <h3>New User? Register Below!</h3>
-        <div className="username">Username:</div>
-        <div className="email">e-mail:</div>
-        <div className="password">Create Password:</div>
-        <div className="password">Confirm Password:</div>
-        <a className="completionButton" href="/">
-          <strong>REGISTER</strong>
-        </a>
-      </div>
-      <div className="links">
-        <nav
-          style={{
-            borderBottom: 'solid 1px',
-            paddingBottom: '1rem',
-          }}
-        >
-          <Link to="/Home">Home</Link> | <Link to="/financial-assessment">FinAssess</Link> |
-          <Link to="/budget-calculator">Budget</Link>
-        </nav>
-      </div>
+      <div className="welcome"><p>Welcome</p></div>
+      <div className="returningusers"><p>Returning Users</p></div>
+      <div className="username"><p>Username</p></div>
+      <div className="password"><p>Password</p></div>
+      <div className="signin"><p>SIGN IN</p></div>
+      <div className="newusers"><p>New Users</p></div>
+      <div className="username"><p>Username</p></div>
+      <div className="email"><p>Email Address</p></div>
+      <div className="password"><p>Create Password</p></div>
+      <div className="password"><p>Confirm Password</p></div>
+      <div className="name"><p>First Name</p></div>
+      <div className="register"><p>REGISTER</p></div>
     </div>
   );
 }
