@@ -7,6 +7,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
+import HorizontalLinearStepper from '../FinAssQs/PiggyIconStepper.js';
+
 function BudgetingQ2(){
     return(
 <div> 
@@ -15,7 +17,7 @@ function BudgetingQ2(){
     <nav>
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
-
+<div> <HorizontalLinearStepper/> </div>
 <div className="Spacing"> 
 
 <Link to="/Q1">
