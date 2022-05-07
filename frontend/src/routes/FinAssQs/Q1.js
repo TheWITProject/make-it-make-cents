@@ -2,41 +2,34 @@ import React from 'react';
 import '../FinAssQs/Questions.css';
 import QuestionList from './QuestionList.js';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
-import ChevronLeftSharpIcon from '@mui/icons-material/ChevronLeftSharp';
 import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import {Link } from 'react-router-dom';
+import {Grid, Button }from '@material-ui/core/';
 import {Box} from "@mui/system";
-function BudgetingQ10(){
+import {Link } from 'react-router-dom';
+import HorizontalLinearStepper from '../FinAssQs/PiggyIconStepper.js';
+function BudgetingQ1(){
     return(
 <div> 
-<div className="Logout">
-    <h1> LOGOUT </h1>
+<div className="Logout"> <h1> LOGOUT </h1>
     <nav>
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
 
-<div className="Spacing"> 
-<Link to="/Q9">
-<Button color="primary" size="large" > 
-<IconButton color="primary" size="large"> 
-<ChevronLeftSharpIcon fontSize="large" />
-</IconButton> BACK  
-</Button>
-</Link> 
+<div> <HorizontalLinearStepper/> </div>
 
-<Link to="/Q11"> 
-<Button color="primary" size="large"> NEXT 
+<div className="Spacing"> 
+
+<Link to="/Q2"> NEXT 
+<Button color="primary" size="large"> 
 <IconButton color="primary" size="large"> 
 <ChevronRightSharpIcon fontSize="large" />
 </IconButton>
-</Button> 
-</Link> 
+</Button> </Link> 
 
 <div className="BudgetingQuestions">  
-    <h2>Budgeting Question 10 : </h2>
+    <h2>Budgeting Question 1 : </h2>
     <QuestionList/>
-
+<Grid container = "">    
 <Box mt={2}>
     <Button size="large" color ="primary" variant="contained">
         A
@@ -54,11 +47,11 @@ function BudgetingQ10(){
         C
     </Button>
 </Box>
-
+</Grid> 
 </div> 
 </div>
 </div>
 </div>
     )
 }
-export default BudgetingQ10;
+export default BudgetingQ1;

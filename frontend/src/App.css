@@ -1,8 +1,26 @@
+
+.welcome .Welcome {
+  color: navy;
+    text-align: center;
+    margin-left: 500px;
+    padding-top: 50px;
+    padding-right: 50px;
+    font-size: 50px;
+    font-style: verdana;
+}
+
 .welcome .login {
-  border: 1px solid palevioletred;
-  color: palevioletred;
-  margin-left: 50%;
-  background-color: white;
+    display:box;
+    box-sizing: border-box;
+    box-align:auto;
+    color: Navy;
+    height: 100px;
+    width: 20%;
+    font-size: 30px;
+    font-style: verdana;
+    background-color: lavender;
+    margin-left: 1500px;
+    margin-top: 10px;
 }
 
 .welcome .signinbutton {
@@ -186,3 +204,4 @@ font-family: sans-serif;
   font-style: verdana;
   background-color: lavender;
 }
+

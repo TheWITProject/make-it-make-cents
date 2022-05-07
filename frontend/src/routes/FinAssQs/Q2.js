@@ -5,31 +5,58 @@ import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import ChevronLeftSharpIcon from '@mui/icons-material/ChevronLeftSharp';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
+import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
 function BudgetingQ2(){
     return(
 <div> 
 <div className="Logout">
     <h1> LOGOUT </h1>
-<img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/>
+    <nav>
+    <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
 
 <div className="Spacing"> 
+
+<Link to="/Q1">
 <Button color="primary" size="large" > 
 <IconButton color="primary" size="large"> 
 <ChevronLeftSharpIcon fontSize="large" />
-</IconButton> <Link to="/Questions">BACK</Link>   
+</IconButton> BACK  
 </Button>
+</Link>
 
-<Button color="primary" size="large"> <Link to="/Q3"> NEXT </Link> 
+
+
+<Link to="/Q3">
+<Button color="primary" size="large"> NEXT
 <IconButton color="primary" size="large"> 
 <ChevronRightSharpIcon fontSize="large" />
-</IconButton>
+</IconButton> 
 </Button> 
+</Link> 
 
 <div className="BudgetingQuestions">  
     <h2>Budgeting Question 2 : </h2>
     <QuestionList/>
+
+ <Box mt={2}>
+    <Button size="large" color ="primary" variant="contained">
+        A
+    </Button>
+</Box>
+
+<Box mt={2}>
+    <Button size="large" color ="primary" variant="contained">
+        B
+    </Button>
+</Box>
+
+<Box mt={2}>
+    <Button size="large" color ="primary" variant="contained">
+        C
+    </Button>
+</Box>
 
 
 

@@ -1,5 +1,4 @@
 import '../App.css';
-import logo from '../horizontallogo.png';
 import img from '../start piggy.png';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,8 @@ export default function FinAssess() {
       <div className="financialStart">
         <div className="tabs">
         <div classname="mmclogo">
-        <img src={logo} className="mmclogo"/>
+        <nav>
+      <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
         </div>
         <div className="finassesslink">
         <nav>
@@ -25,9 +25,10 @@ export default function FinAssess() {
         </div>
         <div className="middletext">Put Your Financial Knowledge to the Test</div>
         <div className="startpiggy">
-        <img src={img} className="startpiggy"/>
+         <Link to="/Q1"> <img src={img} className="startpiggy"/> </Link>
         </div>
-        <div className="getstarted">Get Started</div>  
+
+        <nav className="getstarted"> <Link to = "/Q1" > Get Started </Link> </nav>
         </div>
     );
   }

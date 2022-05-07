@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',         # add this 
     'todo',
     'users',
+    'django_filters',
   ]
 
 

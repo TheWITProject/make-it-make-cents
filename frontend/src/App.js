@@ -1,22 +1,24 @@
 import React from 'react';
 import './App.css';
 import {Link } from 'react-router-dom';
-import logo from './horizontallogo.png';
 
-
-console.log(logo); 
 
 function App() {
   return (
     <div className="welcome">
       <div className="logo">
-      <img src={logo} alt="Logo"/>
-      </div>
+      <nav>
+    <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav> </div>
+    <div className='Welcome'> <h1> WELCOME </h1></div>
+
       <div className="login">Username:</div>
       <div className="login">Password:</div>
+
       <div className="signinbutton">
         <button> Sign in </button>
       </div>
+
+
       <div className="registerNewUser">
         <h3>New User? Register Below!</h3>
         <div className="username">Username:</div>
