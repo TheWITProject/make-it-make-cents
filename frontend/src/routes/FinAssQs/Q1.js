@@ -6,7 +6,12 @@ import IconButton from '@material-ui/core/IconButton';
 import {Grid, Button }from '@material-ui/core/';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
-import HorizontalLinearStepper from '../FinAssQs/PiggyIconStepper.js';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+
+const steps = ['','',''];
+
 function BudgetingQ1(){
     return(
 <div> 
@@ -14,8 +19,14 @@ function BudgetingQ1(){
     <nav>
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
-
-<div> <HorizontalLinearStepper/> </div>
+<Stepper alternativeLabel activeStep={3} connector={null}>
+          {steps.map((label) => (
+            <Step key={label}> <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
+            <StepLabel>{label} <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
+            </StepLabel>
+            </Step>
+          ))}
+</Stepper> 
 
 <div className="Spacing"> 
 

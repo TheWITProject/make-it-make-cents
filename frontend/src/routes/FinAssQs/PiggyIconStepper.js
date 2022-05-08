@@ -7,24 +7,25 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {Link } from 'react-router-dom';
-
+import BudgetingQ1 from '../FinAssQs/Q1.js';
+import BudgetingQ2 from '../FinAssQs/Q2.js';
+import BudgetingQ3 from '../FinAssQs/Q3.js';
 
 const steps = ['', '', '', '','', '',];
 
 const getQuestionPages =(steps)=>{
-        if (steps===1) {
-           return <Link to="/Q1"> </Link> 
+        switch(steps) {
+        case 0:
+           return <BudgetingQ1 />;
+        case 1:
+            return <BudgetingQ2 />;
+        case 2:
+            return <BudgetingQ3 />;
+        default:
+            return <div> Not found </div> ;
         }
-        else if (steps ===2){
-            return <Link to="/Q2"> </Link> 
-        }
-        else if (steps ===3){
-            return <Link to="/Q3"> </Link> 
-        }    
-        else if (steps ===4){
-            return <Link to="/Q4"> </Link>     
-        }   
 }
+
 export default function HorizontalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0) ;
   const [skipped, setSkipped] = React.useState(new Set());

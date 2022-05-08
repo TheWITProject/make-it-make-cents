@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
+import CustomizedSteppers from '../FinAssQs/Customizestepper.js';
 function BudgetingQ3(){
     return(
 <div> 
@@ -16,6 +17,8 @@ function BudgetingQ3(){
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
 <div className="Spacing"> 
+
+<div><CustomizedSteppers/></div>
 
 <Link to="/Q2"> 
 <Button color="primary" size="large" > 

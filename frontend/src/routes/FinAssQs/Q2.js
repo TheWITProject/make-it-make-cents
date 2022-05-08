@@ -7,8 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
-import HorizontalLinearStepper from '../FinAssQs/PiggyIconStepper.js';
-
+import HorizontalLinearStepper from './PiggyIconStepper';
 function BudgetingQ2(){
     return(
 <div> 
