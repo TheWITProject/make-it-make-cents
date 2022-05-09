@@ -10,7 +10,7 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
-const steps = ['','',''];
+const steps = ['', '', '','','','','','','','',''];
 
 function BudgetingQ1(){
     return(
@@ -19,16 +19,19 @@ function BudgetingQ1(){
     <nav>
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
-<Stepper alternativeLabel activeStep={3} connector={null}>
+<div className="Spacing"> 
+
+<Stepper alternativeLabel activeStep={0} connector={null}
+      sx={{
+        paddingLeft:50,
+        paddingRight:50,
+      }}>
           {steps.map((label) => (
             <Step key={label}> <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
-            <StepLabel>{label} <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
-            </StepLabel>
+              <StepLabel>{label}</StepLabel>
             </Step>
           ))}
-</Stepper> 
-
-<div className="Spacing"> 
+</Stepper>
 
 <Link to="/Q2"> NEXT 
 <Button color="primary" size="large"> 
@@ -38,7 +41,7 @@ function BudgetingQ1(){
 </Button> </Link> 
 
 <div className="BudgetingQuestions">  
-    <h2>Budgeting Question 1 : </h2>
+    <h3>Budgeting Question 1 : </h3>
     <QuestionList/>
 <Grid container = "">    
 <Box mt={2}>

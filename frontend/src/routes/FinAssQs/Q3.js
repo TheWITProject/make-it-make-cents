@@ -7,7 +7,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
-import CustomizedSteppers from '../FinAssQs/Customizestepper.js';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+
+
+const steps = ['', '', '','','','','','','','',''];
 function BudgetingQ3(){
     return(
 <div> 
@@ -18,7 +23,13 @@ function BudgetingQ3(){
 
 <div className="Spacing"> 
 
-<div><CustomizedSteppers/></div>
+<Stepper alternativeLabel activeStep={2} connector={null}>
+          {steps.map((label) => (
+            <Step key={label}> <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+</Stepper> 
 
 <Link to="/Q2"> 
 <Button color="primary" size="large" > 
@@ -37,7 +48,7 @@ function BudgetingQ3(){
  </Link> 
 
 <div className="BudgetingQuestions">  
-    <h2>Budgeting Question 3 : </h2>
+    <h3>Budgeting Question 3 : </h3>
     <QuestionList/>
     <Box mt={2}>
     <Button size="large" color ="primary" variant="contained">

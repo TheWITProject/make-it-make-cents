@@ -7,6 +7,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+
+
+const steps = ['', '','','','','','','','','',''];
 function BudgetingQ4(){
     return(
 <div> 
@@ -15,8 +21,15 @@ function BudgetingQ4(){
     <nav>
     <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
-
 <div className="Spacing"> 
+<Stepper alternativeLabel activeStep={3} connector={null}>
+          {steps.map((label) => (
+            <Step key={label}> <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+</Stepper> 
+
 <Link to="/Q3"> 
 <Button color="primary" size="large" > 
 <IconButton color="primary" size="large"> 
@@ -35,7 +48,7 @@ function BudgetingQ4(){
 </Link> 
 
 <div className="BudgetingQuestions">  
-    <h2>Budgeting Question 4 : </h2>
+    <h3>Budgeting Question 4 : </h3>
     <QuestionList/>
     <Box mt={2}>
     <Button size="large" color ="primary" variant="contained">
