@@ -10,7 +10,7 @@ from users import views
         
 router = routers.DefaultRouter()                      # add this
 router.register(r'users', views.usersViewSet)
-router.register(r'Question', views.QuestionViewSet)
+#router.register(r'Question', views.Question)
 router.register(r'Choice', views.ChoiceViewSet)     # add this
         
 urlpatterns = [
@@ -18,6 +18,7 @@ urlpatterns = [
     path('api/', include(router.urls)),                # add this
     path ('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('api/Question/' , views.Question.as_view(), name="Questions"),
 
 ]
 

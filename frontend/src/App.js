@@ -3,9 +3,6 @@ import './App.css';
 import {Link } from 'react-router-dom';
 import logo from './horizontallogo.png';
 
-
-console.log(logo); 
-
 function App() {
   return (
     <div className="welcome">
