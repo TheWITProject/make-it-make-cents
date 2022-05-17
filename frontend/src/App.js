@@ -6,8 +6,8 @@ import logo from './horizontallogo.png';
 function App() {
   return (
     <div className="welcome">
-      <div className="logo">
-      <img src={logo} alt="Logo"/>
+      <div>
+      <img src="./Images/HorizontalMMCLogo.jpg" alt="MMC" className="First" />
       </div>
       <div className="welcome"><p>Welcome</p></div>
       <div className="returningusers"><p>Returning Users</p></div>

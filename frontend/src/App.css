@@ -1,6 +1,6 @@
 
 .welcome .Welcome {
-  color: navy;
+  color: #322667;
     text-align: center;
     margin-left: 500px;
     padding-top: 50px;
@@ -13,12 +13,12 @@
     display:box;
     box-sizing: border-box;
     box-align:auto;
-    color: Navy;
+    color: #322667;
     height: 100px;
     width: 20%;
     font-size: 30px;
     font-style: verdana;
-    background-color: lavender;
+    background-color: #cccad9;
     margin-left: 1500px;
     margin-top: 10px;
 }
@@ -29,7 +29,7 @@
 }
 .welcome .welcome {
   margin-left: 20%;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   font-size: 36pt;
@@ -40,7 +40,7 @@
 }
 
 .welcome .returningusers {
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   font-size: 16pt;
@@ -52,7 +52,7 @@
 
 .welcome .username {
   margin-left: 50%;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   height: 35px;
@@ -60,13 +60,13 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: lavender;
+  background-color: #cccad9;
   padding-bottom: 8px;
 }
 
 .welcome .password {
   margin-left: 50%;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   height: 35px;
@@ -74,7 +74,7 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: lavender;
+  background-color: #cccad9;
   padding-bottom: 8px;
 }
 
@@ -88,13 +88,13 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: Navy;
+  background-color: #322667;
   padding-top: 25px;
   padding-bottom: 72px;
 }
 
 .welcome .newusers {
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   font-size: 16pt;
@@ -105,7 +105,7 @@
 
 .welcome .email {
   margin-left: 50%;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   height: 35px;
@@ -113,12 +113,12 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: lavender;
+  background-color: #cccad9;
   padding-bottom: 8px;
 }
 .welcome .name {
   margin-left: 50%;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
   height: 35px;
@@ -126,7 +126,7 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: lavender;
+  background-color: #cccad9;
   padding-bottom: 8px;
 }
 
@@ -140,7 +140,7 @@
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
-  background-color: Navy;
+  background-color: #322667;
 }
 
 .welcome .format .links {
@@ -245,55 +245,59 @@
   cursor: pointer;
 }
 
-.home Logout {
-  color: navy;
-  padding-top: 50px;
+.home .Logout {
+  color: #322667;
+  /* padding-top: 50px; */
   padding-right: 50px;
   font-size: 20px;
   font-style: verdana;
 }
 
 .home .WelcomeUser {
-  color: navy;
-  font-size: 50px;
+  color: #322667;
+  font-size: 30px;
   text-align: left;
   font-style: verdana;
-  padding-top: 100px;
-  padding-left: 100px;
+  padding-top: 30px;
+  padding-left: 50px;
 }
 
 .Button1 {
-  margin-left: 900px;
-  margin-top: 200px;
+  display: flexbox;
+  margin-left: 500px;
+  margin-top: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: Navy;
+  color: #322667;
   text-align: center;
   border-style: none;
-  height: 150px;
+  height: 100px;
   width: 40%;
-  font-size: 30px;
+  font-size: 20px;
   font-style: verdana;
-  background-color: lavender;
+  background-color: #cccad9;
 }
 
 .Button2 {
-  margin-left: 900px;
-  margin-top: 200px;
-  color: Navy;
+  margin-left: 500px;
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #322667;
   text-align: center;
   border-style: none;
-  height: 150px;
+  height: 100px;
   width: 40%;
-  font-size: 30px;
+  font-size: 20px;
   font-style: verdana;
-  background-color: lavender;
+  background-color: #cccad9;
 }
 
-.Left {
+ .First {
   display: flex;
   justify-content: flex-start;
-  height: 305px;
-  width: 598px;
-  padding-left: 100px;
-}
+  height: 105px;
+  width: 298px;
+  padding-left: 50px;
+  padding-top: 50px;
+} 

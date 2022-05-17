@@ -1,6 +1,6 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 import '../FinAssQs/Questions.css';
-import QuestionList from './QuestionList.js';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import ChevronLeftSharpIcon from '@mui/icons-material/ChevronLeftSharp';
 import IconButton from '@material-ui/core/IconButton';
@@ -13,6 +13,78 @@ import StepLabel from '@mui/material/StepLabel';
 
 
 const steps = ['', '', '','','','','','','','',''];
+
+class Ely extends React.Component{
+    constructor(){
+        super()
+        this.state= {
+          Question: []
+        }
+      }
+    
+      componentDidMount() {
+        this.getQuestion6();
+      }
+        getQuestion6(){
+            fetch('http://127.0.0.1:8000/api/Question/?question_number=6')
+              .then(results => (results.json()))
+              .then(results => this.setState({'Question': results}))
+          }
+render() {
+    return (
+      <ul>
+        {this.state.Question.map(function(index) {
+          return <p> {index.question_text}</p>
+        }
+        )}
+      </ul>
+    );
+  }
+}
+
+class Rachael extends React.Component{
+  constructor(){
+      super()
+      this.state= {
+        Choice: []
+      }
+    }
+  
+    componentDidMount() {
+      this.getChoice6();
+    }
+      getChoice6(){
+          fetch('http://127.0.0.1:8000/api/Choice/?question=6')
+            .then(results => (results.json()))
+            .then(results => this.setState({'Choice': results}))
+        }
+render() {
+  return (
+    <ul>
+      {this.state.Choice.map(function(index) {
+        return <p> <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+        <Button color="neutral" size="large" variant="contained">
+          {index.A}
+        </Button>
+      </Box>
+      
+      <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+        <Button size="large"  variant="contained">
+        {index.B}
+        </Button>
+      </Box>
+
+      <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+        <Button size="large"  variant="contained">
+        {index.C}
+        </Button>
+        </Box> </p>
+      }
+      )}
+    </ul>
+  );
+}
+}
 function BudgetingQ6(){
     return(
 <div> 
@@ -48,25 +120,9 @@ function BudgetingQ6(){
 </Link> 
 
 <div className="BudgetingQuestions">  
-    <h3>Budgeting Question 6 : </h3>
-    <QuestionList/>
-    <Box mt={2}>
-    <Button size="large" color ="primary" variant="contained">
-        A
-    </Button>
-</Box>
+    <h3><Ely/> </h3>
+    <Rachael/>
 
-<Box mt={2}>
-    <Button size="large" color ="primary" variant="contained">
-        B
-    </Button>
-</Box>
-
-<Box mt={2}>
-    <Button size="large" color ="primary" variant="contained">
-        C
-    </Button>
-</Box>
 
 
 </div> 

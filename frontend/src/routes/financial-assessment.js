@@ -36,7 +36,7 @@ export default function FinAssess() {
       <div className="middletext">Put Your Financial Knowledge to the Test</div>
       <div className="startpiggy">
         <nav>
-          <Link to="/Questions">
+          <Link to="/Q1">
             <img src={img} className="startpiggy" />
           </Link>
         </nav>

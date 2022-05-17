@@ -1,13 +1,14 @@
 
 
 .Left {
-height: 50px;
-width: 100px;
+height: 105px;
+width: 298px;
 display: flex;
+padding-left: 50px;
 justify-content: flex-start;
 justify-content: space-between;
-padding-top: 100px;
-padding-left: 120px;
+/* padding-top: 100px; */
+/* padding-left: 120px; */
 
 }
 
@@ -16,38 +17,23 @@ text-align: center;
 }
 .BudgetingQuestions {
 text-align: center;
-color:navy;
-font-size: 50px;
+color:#322667;
+font-size: 30px;
 font-style: verdana;
 padding-top: 0px;
 padding-left: 100px;
 }
 .Logout {
-    color: navy;
+    color: #322667;
     text-align: right;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: 10px;
     font-style: verdana;
 }
 
 .Submit { /* don't think this work */
-    color: navy;
+    color: #322667;
 
-}
-
-.According {
-color: navy;
-font-size: 50px;
-font-size: verdana;
-text-align: center;
-padding-top: 54px;
-}
-
-.Alexis{
-    color: black;
-    font-size: 50px;
-    font-size: verdana;
-    text-align: center; 
 }
 
 .start {
@@ -78,49 +64,70 @@ padding-top: 54px;
     cursor: url;
   }
 
+.According {
+    color: #322667;
+    font-size: 30px;
+    font-size: verdana;
+    text-align: center;
+    text-align: left;
+    margin-left: 300px;
+    padding-top: 54px;
+    }
+
+    .Alexis{
+        color: black;
+        font-size: 30px;
+        font-size: verdana;
+        text-align: center; 
+    }
+
 .Box {
     display: flex;
     justify-content: flex-start;
-    margin-left: 700px;
+    margin-left: 300px;
     display: flex;
     justify-content: flex-start;
     justify-content: space-between;
-    color: Navy;
+    color: #322667;
     text-align:start;
     text-size-adjust: 100px;
     border-style: none ;
-    height: 250px;
+    height: 150px;
     width: 60%;
-    font-size: 30px;
+    font-size: 20px;
     font-style: verdana;
     background-color: lavender
 }
 
 .Advice {
     text-align: center;
-    margin-left: 700px;
+    margin-left: 300px;
     text-align: left;
-    color: navy;
-    font-size: 50px;
+    color: #322667;
+    font-size: 40px;
     
 }
 
 .Recommendation {
     text-align: center;
-    margin-left: 700px;
+    margin-left: 300px;
     text-align: left;
-    color: navy;
-    font-size: 50px;
+    color: #322667;
+    font-size: 30px;
 
 }
 
 .Links{
-    color: navy;
+    text-align: center;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: row;
+    color: #322667;
     font-size:20
 }
 
 .PiggyStepper{
-height: 200px;
-width: 200px;
+height: 100px;
+width: 100px;
 
 }
