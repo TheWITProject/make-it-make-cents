@@ -1,126 +1,127 @@
-
-
 .Left {
-height: 50px;
-width: 100px;
-display: flex;
-justify-content: flex-start;
-justify-content: space-between;
-padding-top: 100px;
-padding-left: 120px;
-
+  height: 105px;
+  width: 298px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-.Spacing{
-text-align: center;  
+.Spacing {
+  text-align: center;
 }
 .BudgetingQuestions {
-text-align: center;
-color:navy;
-font-size: 50px;
-font-style: verdana;
-padding-top: 0px;
-padding-left: 100px;
+  text-align: center;
+  color: navy;
+  font-size: 50px;
+  font-style: verdana;
+  padding-top: 0px;
+  padding-left: 100px;
 }
 .Logout {
-    color: navy;
-    text-align: right;
-    padding-right: 50px;
-    font-size: 20px;
-    font-style: verdana;
+  color: navy;
+  text-align: right;
+  padding-right: 50px;
+  font-size: 20px;
+  font-style: verdana;
 }
 
-.Submit { /* don't think this work */
-    color: navy;
-
+.Submit {
+  /* don't think this work */
+  color: navy;
 }
 
 .According {
-color: navy;
-font-size: 50px;
-font-size: verdana;
-text-align: center;
-padding-top: 54px;
+  color: navy;
+  font-size: 50px;
+  font-size: verdana;
+  text-align: center;
+  padding-top: 54px;
 }
 
-.Alexis{
-    color: black;
-    font-size: 50px;
-    font-size: verdana;
-    text-align: center; 
+.Alexis {
+  color: black;
+  font-size: 50px;
+  font-size: verdana;
+  text-align: center;
 }
 
 .start {
-    font-family: sans-serif; 
-    }
+  font-family: sans-serif;
+}
 .start .tabs {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    
-  }  
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
 .start .tabs .finassesslink {
-    font-family: Verdana;
-    font-size: 20pt;
-    font-weight: 600;
-    color: #322667;
-    padding: 40px;
-    cursor: url;
-
-  }
+  font-family: Verdana;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
 
 .start .tabs .budgetcallink {
-    font-family: Verdana;
-    font-size: 20pt;
-    font-weight: 600;
-    color: #322667;
-    padding: 40px;
-    cursor: url;
-  }
+  font-family: Verdana;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
 
 .Box {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 700px;
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    color: Navy;
-    text-align:start;
-    text-size-adjust: 100px;
-    border-style: none ;
-    height: 250px;
-    width: 60%;
-    font-size: 30px;
-    font-style: verdana;
-    background-color: lavender
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 700px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  color: Navy;
+  text-align: start;
+  text-size-adjust: 100px;
+  border-style: none;
+  height: 250px;
+  width: 60%;
+  font-size: 30px;
+  font-style: verdana;
+  background-color: lavender;
 }
 
 .Advice {
-    text-align: center;
-    margin-left: 700px;
-    text-align: left;
-    color: navy;
-    font-size: 50px;
-    
+  text-align: center;
+  margin-left: 700px;
+  text-align: left;
+  color: navy;
+  font-size: 50px;
 }
 
 .Recommendation {
-    text-align: center;
-    margin-left: 700px;
-    text-align: left;
-    color: navy;
-    font-size: 50px;
-
+  text-align: center;
+  margin-left: 700px;
+  text-align: left;
+  color: navy;
+  font-size: 50px;
 }
 
-.Links{
-    color: navy;
-    font-size:20
+.Links {
+  color: navy;
+  font-size: 20;
 }
 
-.PiggyStepper{
-height: 200px;
-width: 200px;
-
+.PiggyStepper {
+  height: 200px;
+  width: 200px;
 }
+
+.AlignIcon {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 126px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+

@@ -7,12 +7,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Link } from 'react-router-dom';
 import {Box} from "@mui/system";
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
 
 
-const steps = ['', '', '','','','','','','','',''];
 function BudgetingQ10(){
     return(
 <div> 
@@ -23,14 +19,67 @@ function BudgetingQ10(){
 
 
 <div className="Spacing"> 
-
-<Stepper alternativeLabel activeStep={9} connector={null}>
-          {steps.map((label) => (
-            <Step key={label}> <img src = "./Images/questionspiggy.png" alt ="Stepper" className="PiggyStepper"/> 
-              <StepLabel>{label}</StepLabel>
-            </Step>
-          ))}
-</Stepper> 
+<div className="AlignIcon">
+            <nav>
+              <Link to="/Q1">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q2">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q3">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q4">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q5">
+                <img
+                  src="./Images/transparent icon piggy.png"
+                  alt="MMC"
+                  className="AlignIcon"
+                />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q6">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q7">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q8">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q9">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q10">
+                <img src="./Images/selected transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q11">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+          </div>
 
 <Link to="/Q9">
 <Button color="primary" size="large" > 
