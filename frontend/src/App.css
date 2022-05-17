@@ -1,8 +1,8 @@
-.welcome .format {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: column wrap;
+.container {
+  box-sizing: content-box;
+  width: 100%;
 }
+
 .welcome .welcome {
   margin-left: 20%;
   color: Navy;
@@ -16,6 +16,7 @@
 }
 
 .welcome .returningusers {
+  margin-left: 10%;
   color: Navy;
   text-align: center;
   border-style: none;
@@ -52,45 +53,39 @@
   font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .welcome .signin {
-  margin-left: 50%;
+  margin-left: 53%;
   color: white;
   text-align: center;
-  border-style: none;
   height: 35px;
-  width: 241px;
+  width: 85px;
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
+  box-sizing: border-box;
+  border: #322667;
   background-color: Navy;
-  padding-top: 25px;
+}
+
+.welcome .line {
+  width: 600px;
+  margin-left: 50%;
+  padding-top: 72px;
   padding-bottom: 72px;
 }
 
 .welcome .newusers {
+  margin-left: 9%;
   color: Navy;
   text-align: center;
   border-style: none;
   font-size: 16pt;
   font-family: verdana;
   font-style: bold;
-  padding-top: 144px;
-}
-
-.welcome .email {
-  margin-left: 50%;
-  color: Navy;
-  text-align: center;
-  border-style: none;
-  height: 35px;
-  width: 241px;
-  font-size: 12pt;
-  font-family: verdana;
-  font-style: bold;
-  background-color: lavender;
-  padding-bottom: 8px;
 }
 .welcome .name {
   margin-left: 50%;
@@ -105,17 +100,31 @@
   background-color: lavender;
   padding-bottom: 8px;
 }
-
-.welcome .register {
+.welcome .email {
   margin-left: 50%;
-  color: white;
+  color: Navy;
   text-align: center;
-  border: 12px;
+  border-style: none;
   height: 35px;
   width: 241px;
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
+  background-color: lavender;
+  padding-bottom: 8px;
+}
+
+.welcome .register {
+  margin-left: 53%;
+  color: white;
+  text-align: center;
+  height: 35px;
+  width: 90px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  box-sizing: border-box;
+  border: #322667;
   background-color: Navy;
 }
 
