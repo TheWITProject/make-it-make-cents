@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import User
 from rest_framework import viewsets
 from rest_framework import permissions
-from users.models import Question, Choice
-from users.serializers import UserSerializer, QuestionSerializer, ChoiceSerializer
+from users.models import Question, Choice, AssessmentResult
+from users.serializers import UserSerializer, QuestionSerializer, ChoiceSerializer, AssessmentResultSerializer
 
 
 class usersViewSet(viewsets.ModelViewSet):
@@ -19,3 +19,8 @@ class QuestionViewSet(viewsets.ModelViewSet):
 class ChoiceViewSet(viewsets.ReadOnlyModelViewSet):
    queryset = Choice.objects.all()
    serializer_class = ChoiceSerializer
+
+
+class AssessmentResultViewSet(viewsets.ReadOnlyModelViewSet):
+   queryset = AssessmentResult.objects.all()
+   serializer_class = AssessmentResultSerializer

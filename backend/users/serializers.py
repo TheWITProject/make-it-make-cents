@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-from users.models import Question, Choice
+from users.models import Question, Choice, AssessmentResult
 from rest_framework import serializers
 
 class UserSerializer(serializers.ModelSerializer):
@@ -17,3 +17,7 @@ class ChoiceSerializer(serializers.ModelSerializer):
        model = Choice
        fields = ['question', 'A', 'B','C']
 
+class AssessmentResultSerializer(serializers.ModelSerializer):
+    class Meta:
+       model = AssessmentResult
+       fields = ['personatype', 'scores']

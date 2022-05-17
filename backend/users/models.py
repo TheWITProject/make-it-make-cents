@@ -39,9 +39,10 @@ class Persona(models.Model):
  #       points = PointsAdded.objects.filter(PointsAdded=self.points)
  #       return points
 
-class AssesmentResult(models.Model):
+class AssessmentResult(models.Model):
     PersonaType = models.ForeignKey(Persona,on_delete=models.CASCADE)
     Scores = models.IntegerField(max_length=100)
+    #Date = models.
 
     def __str__(self):
         return str(self.PersonaType)
