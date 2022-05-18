@@ -53,8 +53,6 @@
   font-style: bold;
   background-color: lavender;
   padding-bottom: 8px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .welcome .signin {
@@ -174,6 +172,7 @@
 }
 
 .financialStart .tabs .finassesslink {
+  position: relative;
   font-family: Verdana;
   font-size: 14pt;
   font-weight: 600;
@@ -183,11 +182,9 @@
 }
 
 .financialStart .tabs .pigicon {
-  position: relative;
+  margin-left: 90%;
   display: flex;
-  justify-self: flex-start;
-  align-self: flex-start;
-  order: -1;
+  position: relative;
 }
 
 .financialStart .tabs .budgetcallink {
