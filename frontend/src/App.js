@@ -1,11 +1,27 @@
 import React from 'react';
 import './App.css';
 import {Link } from 'react-router-dom';
-import logo from './horizontallogo.png';
+import Coins from "./video/goldencoin_rain_2.mp4";
 
 function App() {
   return (
     <div className="welcome">
+
+      <div>
+      <video autoPlay loop muted
+      style={{
+          position: "fixed",
+          objectFit:"cover",
+          alignItems:"center",
+          width: "100%",
+          height:"200%",
+          zIndex: "-1",
+
+        }}
+      >
+        <source src ={Coins} type ="video/mp4"/>
+      </video>
+      </div>
       <div>
       <img src="./Images/HorizontalMMCLogo.jpg" alt="MMC" className="First" />
       </div>

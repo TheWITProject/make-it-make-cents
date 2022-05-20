@@ -56,21 +56,22 @@ class Rachael extends React.Component {
         {this.state.Choice.map(function (index) {
           return (
             <p>
-              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
-                <Button color="neutral" size="large" variant="contained">
+              <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+                <Button color="primary" size="large" variant="text">
                   {index.A}
                 </Button>
               </Box>
-
-              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
-                <Button size="large" variant="contained">
-                  {index.B}
+              
+              <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+                <Button color="primary" size="large"  variant="text">
+                {index.B}
                 </Button>
               </Box>
 
-              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
-                <Button size="large" variant="contained">
-                  {index.C}
+              <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+                <Button color="primary" size="large"  variant="text">
+                {index.C}
+
                 </Button>
               </Box>
             </p>

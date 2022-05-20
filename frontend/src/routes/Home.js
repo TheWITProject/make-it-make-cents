@@ -5,9 +5,13 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
+      
+
       <div className="home" >
         <h1 className="Logout"> <Link to="/"> LOGOUT </Link></h1>
-        <Link to="Home"><img src="./Images/HorizontalMMCLogo.jpg" alt="MMC" className="Left" /></Link>
+
+
+       <img src="./Images/HorizontalMMCLogo.jpg" alt="MMC" className="Left" />
         <div>
         <div >
           <h1 className="WelcomeUser"> Hello, (User's Name) ! What would you like to do today? </h1>
