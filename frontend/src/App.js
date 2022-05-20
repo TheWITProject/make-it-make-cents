@@ -24,6 +24,9 @@ function App() {
         <div className="password">
           <p>Password</p>
         </div>
+        <div>
+          <img src={require('./welcomepage.png')} className="position" />
+        </div>
         <nav>
           <Link to="/Home">
             <div className="signin">
@@ -31,9 +34,6 @@ function App() {
             </div>
           </Link>
         </nav>
-        <div>
-          <img src={require('./welcomepage.png')} className="position" />
-        </div>
         <div className="line">
           <hr></hr>
         </div>

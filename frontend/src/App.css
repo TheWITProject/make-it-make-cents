@@ -1,13 +1,13 @@
 .container {
   box-sizing: content-box;
-  width: 100%;
+  width: 115%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
 
 .welcome .welcome {
-  margin-left: 130%;
+  margin-left: 170%;
   color: Navy;
   text-align: center;
   border-style: none;
@@ -41,7 +41,6 @@
   background-color: lavender;
   padding-bottom: 8px;
 }
-
 .welcome .password {
   margin-left: 50%;
   color: Navy;
@@ -57,7 +56,7 @@
 }
 
 .welcome .signin {
-  margin-left: 53%;
+  margin-left: 54%;
   color: white;
   text-align: center;
   height: 35px;
@@ -78,22 +77,22 @@
 }
 
 .welcome .position {
-  width: 600px;
+  width: 625px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: flex-start;
   position: absolute;
 }
 
 .welcome .newusers {
-  margin-left: 9%;
+  margin-left: 7%;
   color: Navy;
   text-align: center;
   border-style: none;
   font-size: 16pt;
   font-family: verdana;
   font-style: bold;
-  
 }
 .welcome .name {
   margin-left: 50%;
@@ -123,7 +122,7 @@
 }
 
 .welcome .register {
-  margin-left: 53%;
+  margin-left: 54%;
   color: white;
   text-align: center;
   height: 35px;
