@@ -1,18 +1,19 @@
 .container {
   box-sizing: content-box;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .welcome .welcome {
-  margin-left: 20%;
+  margin-left: 130%;
   color: Navy;
   text-align: center;
   border-style: none;
   font-size: 36pt;
   font-family: Verdana;
   font-style: bold;
-  padding-top: 20px;
-  padding-bottom: 129px;
 }
 
 .welcome .returningusers {
@@ -76,6 +77,14 @@
   padding-bottom: 72px;
 }
 
+.welcome .position {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
 .welcome .newusers {
   margin-left: 9%;
   color: Navy;
@@ -84,6 +93,7 @@
   font-size: 16pt;
   font-family: verdana;
   font-style: bold;
+  
 }
 .welcome .name {
   margin-left: 50%;
@@ -138,7 +148,15 @@
 }
 
 .welcome .logo {
-  height: 105px;
+  height: 165px;
+  width: 298px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.welcome .coin {
+  height: 165px;
   width: 298px;
   display: flex;
   justify-content: flex-start;
