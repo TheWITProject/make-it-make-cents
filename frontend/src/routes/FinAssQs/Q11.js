@@ -1,16 +1,11 @@
-import React from "react";
-import ReactDom from "react-dom";
-import "../FinAssQs/Questions.css";
-import ChevronLeftSharpIcon from "@mui/icons-material/ChevronLeftSharp";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
-import { Box } from "@mui/system";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-
-const steps = ["", "", "", "", "", "", "", "", "", "", ""];
+import React from 'react';
+import ReactDom from 'react-dom';
+import '../FinAssQs/Questions.css';
+import ChevronLeftSharpIcon from '@mui/icons-material/ChevronLeftSharp';
+import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
+import { Box } from '@mui/system';
 
 class Ely extends React.Component {
   constructor() {
@@ -24,7 +19,7 @@ class Ely extends React.Component {
     this.getQuestion11();
   }
   getQuestion11() {
-    fetch("http://127.0.0.1:8000/api/Question/?question_number=11")
+    fetch('http://127.0.0.1:8000/api/Question/?question_number=11')
       .then((results) => results.json())
       .then((results) => this.setState({ Question: results }));
   }
@@ -51,7 +46,7 @@ class Rachael extends React.Component {
     this.getChoice11();
   }
   getChoice11() {
-    fetch("http://127.0.0.1:8000/api/Choice/?question=11")
+    fetch('http://127.0.0.1:8000/api/Choice/?question=11')
       .then((results) => results.json())
       .then((results) => this.setState({ Choice: results }));
   }
@@ -77,7 +72,7 @@ class Rachael extends React.Component {
                 <Button color="primary" size="large"  variant="text">
                 {index.C}
                 </Button>
-                </Box>
+              </Box>
             </p>
           );
         })}
@@ -92,45 +87,92 @@ function BudgetingQ11() {
         <h1> LOGOUT </h1>
         <nav>
           <Link to="/">
-            {" "}
-            <img
-              src="./Images/HorizontalMMCLogo.jpg"
-              alt="MMC"
-              className="Left"
-            />{" "}
+            {' '}
+            <img src="./Images/HorizontalMMCLogo.jpg" alt="MMC" className="Left" />{' '}
           </Link>
         </nav>
 
         <div className="Spacing">
-          <Stepper alternativeLabel activeStep={10} connector={null}>
-            {steps.map((label) => (
-              <Step key={label}>
-                {" "}
+          <div className="AlignIcon">
+            <nav>
+              <Link to="/Q1">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q2">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q3">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q4">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q5">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q6">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q7">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q8">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q9">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q10">
+                <img src="./Images/transparent icon piggy.png" alt="MMC" className="AlignIcon" />
+              </Link>
+            </nav>
+            <nav>
+              <Link to="/Q11">
                 <img
-                  src="./Images/questionspiggy.png"
-                  alt="Stepper"
-                  className="PiggyStepper"
+                  src="./Images/selected transparent icon piggy.png"
+                  alt="MMC"
+                  className="AlignIcon"
                 />
-                <StepLabel>{label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
+              </Link>
+            </nav>
+          </div>
 
           <Link to="/Q10">
             <Button color="primary" size="large">
               <IconButton color="primary" size="large">
                 <ChevronLeftSharpIcon fontSize="large" />
-              </IconButton>{" "}
+              </IconButton>{' '}
               BACK
             </Button>
           </Link>
 
           <div className="BudgetingQuestions">
-            <h3> <Ely /> </h3>
+            <h3>
+              {' '}
+              <Ely />{' '}
+            </h3>
             <Rachael />
 
             <div>
-              {" "}
+              {' '}
               <Button color="navy" size="larger">
                 <Link to="/ResultsPage"> SUBMIT </Link>
               </Button>

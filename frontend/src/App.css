@@ -1,27 +1,26 @@
 
-
 .welcome .Welcome {
   color: #322667;
-    text-align: center;
-    margin-left: 500px;
-    padding-top: 50px;
-    padding-right: 50px;
-    font-size: 50px;
-    font-style: verdana;
+  text-align: center;
+  margin-left: 500px;
+  padding-top: 50px;
+  padding-right: 50px;
+  font-size: 50px;
+  font-style: verdana;
 }
 
 .welcome .login {
-    display:box;
-    box-sizing: border-box;
-    box-align:auto;
-    color: #322667;
-    height: 100px;
-    width: 20%;
-    font-size: 30px;
-    font-style: verdana;
-    background-color: #cccad9;
-    margin-left: 1500px;
-    margin-top: 10px;
+  display: box;
+  box-sizing: border-box;
+  box-align: auto;
+  color: #322667;
+  height: 100px;
+  width: 20%;
+  font-size: 30px;
+  font-style: verdana;
+  background-color: #cccad9;
+  margin-left: 1500px;
+  margin-top: 10px;
 }
 .welcome .format {
   display: flex;
@@ -294,11 +293,11 @@
   background-color: #cccad9;
 }
 
- .First {
+.First {
   display: flex;
   justify-content: flex-start;
   height: 105px;
   width: 298px;
   padding-left: 50px;
   padding-top: 50px;
-} 
+}
