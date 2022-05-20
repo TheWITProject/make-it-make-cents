@@ -63,19 +63,19 @@ render() {
     <ul>
       {this.state.Choice.map(function(index) {
         return <p> <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button color="neutral" size="large" variant="contained">
+        <Button color="primary" size="large" variant="text">
           {index.A}
         </Button>
       </Box>
       
       <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button size="large"  variant="contained">
+        <Button color="primary" size="large"  variant="text">
         {index.B}
         </Button>
       </Box>
 
       <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button size="large"  variant="contained">
+        <Button color="primary" size="large"  variant="text">
         {index.C}
         </Button>
         </Box> </p>

@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDom from 'react-dom';
+import React, {Component} from 'react';
+import { render } from 'react-dom';
 import '../FinAssQs/Questions.css';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import IconButton from '@material-ui/core/IconButton';
 import { Button }from '@material-ui/core/';
 import {Box} from "@mui/system";
-import {Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { MMC } from '../Theme.js';
 
 const steps = ['', '', '','','','','','','','',''];
 
@@ -40,60 +42,81 @@ render() {
   }
 }
 
+
 class Rachael extends React.Component{
-  constructor(){
-      super()
+  constructor(props){
+      super(props)
       this.state= {
-        Choice: []
+        Choice: [],
+        Count: 0,
       }
     }
-  
+
+    incrementAlexis = ()=> {
+      this.setState({ count: this.state.count +1});
+  }
+
+  incrementPerl = ()=> {
+    this.setState({ count: this.state.count +2});
+}
+
+incrementKimShego = ()=> {
+    this.setState({ count: this.state.count +3});
+}
+
     componentDidMount() {
       this.getChoice1();
+      this.incrementAlexis();
     }
       getChoice1(){
           fetch('http://127.0.0.1:8000/api/Choice/?question=1')
             .then(results => (results.json()))
             .then(results => this.setState({'Choice': results}))
         }
-render() {
+        
+render(props) {
   return (
-    <ul>
+    <ul >
       {this.state.Choice.map(function(index) {
-        return <p> <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button color="neutral" size="large" variant="contained">
+        return <p> 
+          <ThemeProvider theme={MMC}>
+          <Box size="large" mt={2} style={{ flexDirection: "row" }}>
+
+          <Button 
+            color="primary"
+            size="large"
+            variant ="text"
+          >
           {index.A}
-        </Button>
+          </Button>
       </Box>
-      
+     
+
       <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button size="large"  variant="contained">
+        <Button size="large" color="primary" variant ="text">
         {index.B}
         </Button>
       </Box>
 
-      <Box size="large" mt={2} style={{ flexDirection: "row" }}>
-        <Button size="large"  variant="contained">
-        {index.C}
+      <Box  size="large" mt={2} style={{ flexDirection: "row" }}>
+        <Button size="large"  color="primary" variant ="text" >
+        {index.C} 
         </Button>
-        </Box> </p>
+        
+        </Box> 
+        </ThemeProvider> </p>
       }
       )}
     </ul>
   );
 }
 }
-// ReactDom.render(
-//     < Rachael />,
-//     document.getElementById('root')
-//   )
-  
-function BudgetingQ1(props){
+function BudgetingQ1(){
     return(
 <div> 
 <div className="Logout"> <h1> LOGOUT </h1>
     <nav>
-    <Link to="/"> <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
+    <Link to="/" > <img src = "./Images/HorizontalMMCLogo.jpg" alt ="MMC" className="Left"/> </Link></nav>
 
 <div className="Spacing"> 
 
@@ -106,12 +129,14 @@ function BudgetingQ1(props){
           ))}
 </Stepper>
 
-<Link to="/Q2"> NEXT 
-<Button color="primary" size="large"> 
+<ThemeProvider theme={MMC}>
+<Link to="/Q2"> 
+<Button color="primary" size="large"> NEXT 
 <IconButton color="primary" size="large"> 
 <ChevronRightSharpIcon fontSize="large" />
 </IconButton>
 </Button> </Link> 
+</ThemeProvider>
 
 <div className="BudgetingQuestions">  
 

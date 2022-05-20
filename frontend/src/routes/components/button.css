@@ -1,0 +1,16 @@
+.MuiButton-root{
+    color: #322667;
+}
+
+.MuiButton-root:hover {
+  color: #cccad9;
+}
+
+.MuiButton-text{
+    color: #322667;
+    font-size: larger;
+}
+
+/* .MuiButton-font{
+  fon
+} */

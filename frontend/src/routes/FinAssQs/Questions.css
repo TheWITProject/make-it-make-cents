@@ -131,3 +131,15 @@ height: 100px;
 width: 100px;
 
 }
+
+.Font{
+color: #322667;
+font-size: 200;
+
+}
+
+.MuiButton-textSizeLarge{
+    font-size: larger;
+    color: #322667;
+}
+
