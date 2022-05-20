@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
+      
+
       <div className="home" >
         <h1 className="Logout"> <Link to="/"> LOGOUT </Link></h1>
 

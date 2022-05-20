@@ -1,21 +1,20 @@
 import React from 'react';
 import './App.css';
 import {Link } from 'react-router-dom';
-import Coins from "./video/trimmedCoinRain.mp4";
+import Coins from "./video/goldencoin_rain_2.mp4";
 
 function App() {
   return (
     <div className="welcome">
 
       <div>
-      <video autoPlay loop muted playsInline
+      <video autoPlay loop muted
       style={{
-          position: "absolute",
-          width :"100",
-          Left: "100",
-          Right:"100",
-          height:"100",
+          position: "fixed",
           objectFit:"cover",
+          alignItems:"center",
+          width: "100%",
+          height:"200%",
           zIndex: "-1",
 
         }}
