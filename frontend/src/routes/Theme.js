@@ -1,6 +1,7 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material';
+import Button from '@mui/material/Button';
+import ReactDOM from "react-dom";
 
 const theme = createTheme({
   palette: {
@@ -17,10 +18,14 @@ const theme = createTheme({
       primary: '#322667',
     },
     divider: '#322667',
-  },
-});
 
-function MMCTheme(){
-  return <ThemeProvider theme={theme}> </ThemeProvider>
+    },
+  })
+
+export default function DefaultProps() {
+  return (
+    <ThemeProvider theme={theme}>
+      <Button>hello</Button>
+    </ThemeProvider>
+  );
 }
-

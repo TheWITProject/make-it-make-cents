@@ -30,7 +30,9 @@ function AlexisPage(){
     <h1 className="Advice"> Our advice: </h1>
     <h2 className="Recommendation"> We need to work on our spending habits and create a budgeting plan to accumulate an emergency fund or savings account. Here’s some resources that explain the importance of budgeting, savings and emergency funds. We recommend reading up on these articles to instill better budgeting habits. </h2>
     
-    <div className='Links'> <p>Link 1 </p>      <p>Link 2</p>            Link 3</div> 
+    <div className='Links'> <h6> Link 1 </h6>
+     <h6> Link 2 </h6> <h6> Link 3 </h6>
+      </div> 
     </div>
     </div>
 

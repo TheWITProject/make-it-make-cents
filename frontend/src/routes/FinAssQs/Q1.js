@@ -1,13 +1,88 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 import '../FinAssQs/Questions.css';
-import QuestionList from './QuestionList.js';
-import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
-import IconButton from '@material-ui/core/IconButton';
-import { Grid, Button } from '@material-ui/core/';
+import { Button } from '@material-ui/core/';
 import { Box } from '@mui/system';
 import { Link } from 'react-router-dom';
 
-function BudgetingQ1() {
+class Ely extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      Question: [],
+    };
+  }
+
+  componentDidMount() {
+    this.getQuestion1();
+  }
+  getQuestion1() {
+    fetch('http://127.0.0.1:8000/api/Question/?question_number=1')
+      .then((results) => results.json())
+      .then((results) => this.setState({ Question: results }));
+  }
+  render() {
+    return (
+      <ul>
+        {this.state.Question.map(function (index) {
+          return <h3> {index.question_text}</h3>;
+        })}
+      </ul>
+    );
+  }
+}
+
+class Rachael extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      Choice: [],
+    };
+  }
+
+  componentDidMount() {
+    this.getChoice1();
+  }
+  getChoice1() {
+    fetch('http://127.0.0.1:8000/api/Choice/?question=1')
+      .then((results) => results.json())
+      .then((results) => this.setState({ Choice: results }));
+  }
+  render() {
+    return (
+      <ul>
+        {this.state.Choice.map(function (index) {
+          return (
+            <p>
+              {' '}
+              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
+                <Button color="neutral" size="large" variant="contained">
+                  {index.A}
+                </Button>
+              </Box>
+              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
+                <Button size="large" variant="contained">
+                  {index.B}
+                </Button>
+              </Box>
+              <Box size="large" mt={2} style={{ flexDirection: 'row' }}>
+                <Button size="large" variant="contained">
+                  {index.C}
+                </Button>
+              </Box>{' '}
+            </p>
+          );
+        })}
+      </ul>
+    );
+  }
+}
+// ReactDom.render(
+//     < Rachael />,
+//     document.getElementById('root')
+//   )
+
+function BudgetingQ1(props) {
   return (
     <div>
       <div className="Logout">
@@ -82,38 +157,9 @@ function BudgetingQ1() {
             </nav>
           </div>
 
-          <Link to="/Q2">
-            {' '}
-            NEXT
-            <Button color="primary" size="large">
-              <IconButton color="primary" size="large">
-                <ChevronRightSharpIcon fontSize="large" />
-              </IconButton>
-            </Button>{' '}
-          </Link>
-
           <div className="BudgetingQuestions">
-            <h3>Budgeting Question 1 : </h3>
-            <QuestionList />
-            <Grid container="">
-              <Box mt={2}>
-                <Button size="large" color="primary" variant="contained">
-                  A
-                </Button>
-              </Box>
-
-              <Box mt={2}>
-                <Button size="large" color="primary" variant="contained">
-                  B
-                </Button>
-              </Box>
-
-              <Box mt={2}>
-                <Button size="large" color="primary" variant="contained">
-                  C
-                </Button>
-              </Box>
-            </Grid>
+            <Ely />
+            <Rachael />
           </div>
         </div>
       </div>

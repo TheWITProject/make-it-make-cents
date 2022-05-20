@@ -25,7 +25,7 @@ class Choice(models.Model):
     C = models.TextField(max_length=100)
 
     def __str__(self):
-        return str(self.question)
+        return self.question
 
 class Persona(models.Model):
     name = models.CharField(blank=False, max_length=20, default='Enter Persona Name')
@@ -33,11 +33,6 @@ class Persona(models.Model):
 
     def __str__(self):
         return str(self.name)
-
-#class PointsAdded:
-#    def __init__ (self, ):
- #       points = PointsAdded.objects.filter(PointsAdded=self.points)
- #       return points
 
 class AssesmentResult(models.Model):
     PersonaType = models.ForeignKey(Persona,on_delete=models.CASCADE)

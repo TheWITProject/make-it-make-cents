@@ -23,6 +23,9 @@ class Question(generics.ListAPIView):
 
 
 
-class ChoiceViewSet(viewsets.ReadOnlyModelViewSet):
+class Choice(generics.ListAPIView):
    queryset = Choice.objects.all()
+   model = Choice
    serializer_class = ChoiceSerializer
+   filter_backends = [DjangoFilterBackend]
+   filterset_fields = ['question']

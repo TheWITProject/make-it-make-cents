@@ -15,5 +15,5 @@ class QuestionSerializer(serializers.ModelSerializer):
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
        model = Choice
-       fields = ['question', 'A', 'B','C']
+       fields = [ 'question', 'A', 'B','C']
 
