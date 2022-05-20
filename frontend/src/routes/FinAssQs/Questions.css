@@ -1,133 +1,134 @@
-
-
 .Left {
-height: 105px;
-width: 298px;
-display: flex;
-padding-left: 50px;
-justify-content: flex-start;
-justify-content: space-between;
-/* padding-top: 100px; */
-/* padding-left: 120px; */
-
+  height: 105px;
+  width: 298px;
+  display: flex;
+  padding-left: 50px;
+  justify-content: flex-start;
+  justify-content: space-between;
+  /* padding-top: 100px; */
+  /* padding-left: 120px; */
 }
 
-.Spacing{
-text-align: center;  
+.Spacing {
+  text-align: center;
 }
 .BudgetingQuestions {
-text-align: center;
-color:#322667;
-font-size: 30px;
-font-style: verdana;
-padding-top: 0px;
-padding-left: 100px;
+  text-align: center;
+  color: #322667;
+  font-size: 30px;
+  font-style: verdana;
+  padding-top: 0px;
+  padding-left: 100px;
 }
 .Logout {
-    color: #322667;
-    text-align: right;
-    padding-right: 50px;
-    font-size: 10px;
-    font-style: verdana;
+  color: #322667;
+  text-align: right;
+  padding-right: 50px;
+  font-size: 10px;
+  font-style: verdana;
 }
 
-.Submit { /* don't think this work */
-    color: #322667;
-
+.Submit {
+  /* don't think this work */
+  color: #322667;
 }
 
 .start {
-    font-family: sans-serif; 
-    }
+  font-family: sans-serif;
+}
 .start .tabs {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    
-  }  
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
 .start .tabs .finassesslink {
-    font-family: Verdana;
-    font-size: 20pt;
-    font-weight: 600;
-    color: #322667;
-    padding: 40px;
-    cursor: url;
-
-  }
+  font-family: Verdana;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
 
 .start .tabs .budgetcallink {
-    font-family: Verdana;
-    font-size: 20pt;
-    font-weight: 600;
-    color: #322667;
-    padding: 40px;
-    cursor: url;
-  }
+  font-family: Verdana;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #322667;
+  padding: 40px;
+  cursor: url;
+}
 
 .According {
-    color: #322667;
-    font-size: 30px;
-    font-size: verdana;
-    text-align: center;
-    text-align: left;
-    margin-left: 300px;
-    padding-top: 54px;
-    }
+  color: #322667;
+  font-size: 30px;
+  font-size: verdana;
+  text-align: center;
+  text-align: left;
+  margin-left: 300px;
+  padding-top: 54px;
+}
 
-    .Alexis{
-        color: black;
-        font-size: 30px;
-        font-size: verdana;
-        text-align: center; 
-    }
+.Alexis {
+  color: black;
+  font-size: 30px;
+  font-size: verdana;
+  text-align: center;
+}
 
 .Box {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 300px;
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    color: #322667;
-    text-align:start;
-    text-size-adjust: 100px;
-    border-style: none ;
-    height: 150px;
-    width: 60%;
-    font-size: 20px;
-    font-style: verdana;
-    background-color: lavender
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 300px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  color: #322667;
+  text-align: start;
+  text-size-adjust: 100px;
+  border-style: none;
+  height: 150px;
+  width: 60%;
+  font-size: 20px;
+  font-style: verdana;
+  background-color: lavender;
 }
 
 .Advice {
-    text-align: center;
-    margin-left: 300px;
-    text-align: left;
-    color: #322667;
-    font-size: 40px;
-    
+  text-align: center;
+  margin-left: 300px;
+  text-align: left;
+  color: #322667;
+  font-size: 40px;
 }
 
 .Recommendation {
-    text-align: center;
-    margin-left: 300px;
-    text-align: left;
-    color: #322667;
-    font-size: 30px;
-
+  text-align: center;
+  margin-left: 300px;
+  text-align: left;
+  color: #322667;
+  font-size: 30px;
 }
 
-.Links{
-    text-align: center;
-    margin-left: 300px;
-    display: flex;
-    flex-direction: row;
-    color: #322667;
-    font-size:20
+.Links {
+  text-align: center;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: row;
+  color: #322667;
+  font-size: 20;
 }
 
-.PiggyStepper{
-height: 100px;
-width: 100px;
+.PiggyStepper {
+  height: 100px;
+  width: 100px;
+}
 
+.AlignIcon {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 126px;
+  padding-top: 54px;
+  padding-bottom: 54px;
 }
