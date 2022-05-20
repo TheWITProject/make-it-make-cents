@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import Coins from './video/goldencoin_rain_2.mp4';
 import logo from './horizontallogo.png';
 
 console.log(logo);
@@ -8,6 +9,24 @@ console.log(logo);
 function App() {
   return (
     <div className="container">
+      <div>
+        <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: 'fixed',
+            objectFit: 'cover',
+            alignItems: 'center',
+            width: '100%',
+            height: '200%',
+            zIndex: '-1',
+          }}
+        >
+          <source src={Coins} type="video/mp4" />
+        </video>
+      </div>
+      <div></div>
       <div className="welcome">
         <div className="logo">
           <img src={logo} alt="Logo" />
