@@ -81,6 +81,7 @@ render(props) {
             color="primary"
             size="large"
             variant ="text"
+            
           >
           {index.A}
           </Button>
@@ -182,9 +183,21 @@ function BudgetingQ1(props) {
             </nav>
           </div>
 
-          <div className="BudgetingQuestions">
-            <Ely />
-            <Rachael />
+
+<ThemeProvider theme={MMC}>
+<Link to="/Q2"> 
+<Button color="primary" size="large"> NEXT 
+<IconButton color="primary" size="large"> 
+<ChevronRightSharpIcon fontSize="large" />
+</IconButton>
+</Button> </Link> 
+</ThemeProvider>
+
+<div className="BudgetingQuestions">  
+
+        <Ely/>
+        <Rachael/>
+
           </div>
         </div>
       </div>
