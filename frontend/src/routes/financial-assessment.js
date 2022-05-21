@@ -16,15 +16,16 @@ export default function FinAssess() {
         </div>
         <div className="finassesslink">
           <nav>
-            <Link to="/financial-assessment">Financial Assessment</Link>
+            <Link to="/financial-assessment">
+              <img src={require('../Asset 6.png')} className="finassesslink" />
+            </Link>
           </nav>
-        </div>
-        <div>
-          <img src={require('../transparent icon piggy.png')} className="pigicon" />
         </div>
         <div className="budgetcallink">
           <nav>
-            <Link to="/budget-calculator">Budget Calculator</Link>
+            <Link to="/budget-calculator">
+              <img src={require('../Asset 7.png')} className="budgetcallink" />
+            </Link>
           </nav>
         </div>
         <div className="logout">
