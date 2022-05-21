@@ -1,3 +1,7 @@
+.container {
+  box-sizing: content-box;
+  width: 115%;
+}
 
 .welcome .Welcome {
   color: #322667;
@@ -25,21 +29,21 @@
 .welcome .format {
   display: flex;
   justify-content: flex-start;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
+
 .welcome .welcome {
-  margin-left: 20%;
+  margin-left: 170%;
   color: #322667;
   text-align: center;
   border-style: none;
   font-size: 36pt;
   font-family: Verdana;
   font-style: bold;
-  padding-top: 20px;
-  padding-bottom: 129px;
 }
 
 .welcome .returningusers {
+  margin-left: 10%;
   color: #322667;
   text-align: center;
   border-style: none;
@@ -63,7 +67,6 @@
   background-color: #cccad9;
   padding-bottom: 8px;
 }
-
 .welcome .password {
   margin-left: 50%;
   color: #322667;
@@ -79,28 +82,43 @@
 }
 
 .welcome .signin {
-  margin-left: 50%;
+  margin-left: 54%;
   color: white;
   text-align: center;
-  border-style: none;
   height: 35px;
-  width: 241px;
+  width: 85px;
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
+  box-sizing: border-box;
+  border: #322667;
   background-color: #322667;
-  padding-top: 25px;
+}
+
+.welcome .line {
+  width: 600px;
+  margin-left: 50%;
+  padding-top: 72px;
   padding-bottom: 72px;
 }
 
+.welcome .position {
+  width: 625px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  position: absolute;
+}
+
 .welcome .newusers {
+  margin-left: 7%;
   color: #322667;
   text-align: center;
   border-style: none;
   font-size: 16pt;
   font-family: verdana;
   font-style: bold;
-  padding-top: 144px;
 }
 
 .welcome .email {
@@ -129,17 +147,31 @@
   background-color: #cccad9;
   padding-bottom: 8px;
 }
-
-.welcome .register {
+.welcome .email {
   margin-left: 50%;
-  color: white;
+  color: Navy;
   text-align: center;
-  border: 12px;
+  border-style: none;
   height: 35px;
   width: 241px;
   font-size: 12pt;
   font-family: verdana;
   font-style: bold;
+  background-color: #cccad9;
+  padding-bottom: 8px;
+}
+
+.welcome .register {
+  margin-left: 54%;
+  color: white;
+  text-align: center;
+  height: 35px;
+  width: 90px;
+  font-size: 12pt;
+  font-family: verdana;
+  font-style: bold;
+  box-sizing: border-box;
+  border: #322667;
   background-color: #322667;
 }
 
@@ -155,7 +187,15 @@
 }
 
 .welcome .logo {
-  height: 105px;
+  height: 165px;
+  width: 298px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.welcome .coin {
+  height: 165px;
   width: 298px;
   display: flex;
   justify-content: flex-start;
@@ -189,28 +229,25 @@
 }
 
 .financialStart .tabs .finassesslink {
+  position: relative;
   font-family: Verdana;
-  font-size: 14pt;
-  font-weight: 600;
+  height: 100px;
+  width: 203px;
   color: #322667;
-  padding: 40px;
   cursor: url;
 }
 
 .financialStart .tabs .pigicon {
-  position: relative;
+  margin-left: 90%;
   display: flex;
-  justify-self: flex-start;
-  align-self: flex-start;
-  order: -1;
+  position: relative;
 }
 
 .financialStart .tabs .budgetcallink {
   font-family: Verdana;
-  font-size: 14pt;
-  font-weight: 600;
+  height: 95px;
+  width: 198px;
   color: #322667;
-  padding: 40px;
   cursor: url;
 }
 
@@ -223,6 +260,7 @@
   justify-content: center;
   font-size: 30px;
   cursor: default;
+  padding-top: 120px;
 }
 
 .financialStart .getstarted {
