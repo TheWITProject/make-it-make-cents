@@ -1,0 +1,83 @@
+/* .Budget{
+    font-family: sans-serif;
+}
+
+.Budget .Bar{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.Budget 
+
+  .Budget .Bar .logout {
+    text-align: right;
+    font-family: Verdana;
+    font-weight: 600;
+    color: #322667;
+    position:relative;
+  }
+  
+  .Budget .Bar .finassesslink {
+    font-family: Verdana;
+    font-size: 14pt;
+    font-weight: 600;
+    color: #322667;
+    padding: 40px;
+    cursor: url;
+  }
+  
+  .Budget .Bar .pigicon {
+    position: absolute;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    z-index: -1;
+  }
+  
+  .Budget .Bar .budgetcallink {
+    font-family: Verdana;
+    font-size: 14pt;
+    font-weight: 600;
+    color: #322667;
+    padding: 40px;
+    cursor: url;
+  }
+   */
+
+
+.Left {
+    height: 105px;
+    width: 298px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+.Words {
+    color: #322667;
+    text-align: center;
+    font-size: 100px;
+    position:relative;
+    z-index:2;
+}
+
+ .Tab{
+    color: #322667;
+    text-align: center;
+    font-size: 50px;
+    position:relative;
+    z-index:2;
+   
+}
+ .Coin{
+
+    width: 600px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    z-index: -1;
+
+}

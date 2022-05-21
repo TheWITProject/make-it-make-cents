@@ -77,7 +77,7 @@ render() {
     </ul>
   );
 }
-
+}
 function BudgetingQ3() {
   return (
     <div>

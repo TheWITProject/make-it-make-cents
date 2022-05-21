@@ -7,9 +7,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import {Box} from "@mui/system";
 import {Link } from 'react-router-dom';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { MMC } from '../Theme.js';
 
@@ -82,6 +79,7 @@ render() {
       )}
     </ul>
   );
+}
 }
 
 function BudgetingQ2() {
